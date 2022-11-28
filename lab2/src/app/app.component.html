@@ -1,0 +1,8 @@
+<app-header *ngIf="displayHeader"></app-header>
+<app-content *ngFor="let content of contents"></app-content>
+<app-footer></app-footer>
+
+<!-- <button (click)="changeHeader()">Hide/Display header</button> -->
+<button (click)="changeHeader()">
+  {{ displayHeader ? "Hide" : "Display" }} header
+</button>
